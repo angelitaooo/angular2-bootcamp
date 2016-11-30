@@ -11,6 +11,11 @@ Based on the concepts seen in the App structure session, refactor the following 
 - [title.component](/src/app/components/title): an application component that shows the header of the application, **can be use by every module but should be the same instance for ever module(singleton).**
 - [profile.component](/src/app/components/profile/): a component that allow us to edit the current user of the application, **this is part of the profile feature**
 
+**Recomendation**: If you put a **service** inside a folder, you must copy with it the "definition" folder that should contain the interface of the service. Also the module that contains the service should have the service in the declaration, for example:
+
+ providers: [
+        { provide: 'IUserService', useClass: UserService },
+    ],
 
 **HINT**: The solution should have the following structure:
 ![Modules](SolutionModules.PNG)
