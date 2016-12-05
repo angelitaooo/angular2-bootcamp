@@ -64,7 +64,7 @@
         <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="."></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button (broadcast)="getBroadcast($event)" tipo="warning" contenido="="></app-button>
+        <app-button (broadcast)="calculate()" tipo="warning" contenido="="></app-button>
       </div>
       <div class="col-xs-3">
         <app-button (broadcast)="getBroadcast($event)" tipo="success" contenido="/"></app-button>
@@ -74,7 +74,7 @@
     <!-- Fifth Row -->
     <div class="row">
       <div class="col-xs-12">
-        <app-button (broadcast)="clear()" tipo="danger" contenido="button"></app-button>
+        <app-button (broadcast)="clear()" tipo="danger" contenido="Clear"></app-button>
       </div>
     </div>
   </div>

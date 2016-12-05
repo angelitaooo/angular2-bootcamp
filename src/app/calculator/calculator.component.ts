@@ -19,4 +19,13 @@ export class CalculatorComponent implements OnInit {
   clear() {
     this.value = '';
   }
+
+  calculate() {
+
+    try {
+      this.value = eval(this.value);
+    } catch (e) {
+      this.value = 'Error';
+    }
+  }
 }
