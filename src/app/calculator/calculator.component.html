@@ -1,7 +1,7 @@
 <div class="container">
 <div class="row">
   <div class="col-xs-12 ">
-    <input type="number" value="123" class="result">
+    <input type="text" value="{{value}}" class="result" >
   </div>
 
 
@@ -10,71 +10,71 @@
          <!-- First Row -->
     <div class="row">
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="7"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="7"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="8"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="8"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="9"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="9"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="success" contenido="+"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="success" contenido="+"></app-button>
       </div>
     </div>
 
       <!-- Second Row -->
     <div class="row">
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="4"></app-button>
+        <app-button  (broadcast)="getBroadcast($event)" tipo="primary" contenido="4"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="5"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="5"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="6"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="6"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="success" contenido="-"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="success" contenido="-"></app-button>
       </div>
     </div>
 
       <!-- Third Row -->
     <div class="row">
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="3"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="3"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="2"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="2"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="1"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="1"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="success" contenido="*"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="success" contenido="*"></app-button>
       </div>
     </div>
 
     <!-- Fourth Row -->
     <div class="row">
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="0"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="0"></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="primary" contenido="."></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="primary" contenido="."></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="warning" contenido="="></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="warning" contenido="="></app-button>
       </div>
       <div class="col-xs-3">
-        <app-button tipo="success" contenido="/"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="success" contenido="/"></app-button>
       </div>
     </div>
 
     <!-- Fifth Row -->
     <div class="row">
       <div class="col-xs-12">
-        <app-button tipo="danger" contenido="button"></app-button>
+        <app-button (broadcast)="getBroadcast($event)" tipo="danger" contenido="button"></app-button>
       </div>
     </div>
   </div>
