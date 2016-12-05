@@ -15,4 +15,8 @@ export class CalculatorComponent implements OnInit {
   getBroadcast(event) {
     this.value = this.value + event;
   }
+
+  clear() {
+    this.value = '';
+  }
 }
